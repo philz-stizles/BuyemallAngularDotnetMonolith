@@ -1,0 +1,12 @@
+C:\Users\theop\OneDrive\Documents\ICT\Projects\Personal\CSharp\netcore-buyemall-angular\BuyEmAll.Core\bin\Debug\net5.0\BuyEmAll.Core.deps.json
+C:\Users\theop\OneDrive\Documents\ICT\Projects\Personal\CSharp\netcore-buyemall-angular\BuyEmAll.Core\bin\Debug\net5.0\BuyEmAll.Core.dll
+C:\Users\theop\OneDrive\Documents\ICT\Projects\Personal\CSharp\netcore-buyemall-angular\BuyEmAll.Core\bin\Debug\net5.0\ref\BuyEmAll.Core.dll
+C:\Users\theop\OneDrive\Documents\ICT\Projects\Personal\CSharp\netcore-buyemall-angular\BuyEmAll.Core\bin\Debug\net5.0\BuyEmAll.Core.pdb
+C:\Users\theop\OneDrive\Documents\ICT\Projects\Personal\CSharp\netcore-buyemall-angular\BuyEmAll.Core\obj\Debug\net5.0\BuyEmAll.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\theop\OneDrive\Documents\ICT\Projects\Personal\CSharp\netcore-buyemall-angular\BuyEmAll.Core\obj\Debug\net5.0\BuyEmAll.Core.AssemblyInfoInputs.cache
+C:\Users\theop\OneDrive\Documents\ICT\Projects\Personal\CSharp\netcore-buyemall-angular\BuyEmAll.Core\obj\Debug\net5.0\BuyEmAll.Core.AssemblyInfo.cs
+C:\Users\theop\OneDrive\Documents\ICT\Projects\Personal\CSharp\netcore-buyemall-angular\BuyEmAll.Core\obj\Debug\net5.0\BuyEmAll.Core.csproj.CoreCompileInputs.cache
+C:\Users\theop\OneDrive\Documents\ICT\Projects\Personal\CSharp\netcore-buyemall-angular\BuyEmAll.Core\obj\Debug\net5.0\BuyEmAll.Core.dll
+C:\Users\theop\OneDrive\Documents\ICT\Projects\Personal\CSharp\netcore-buyemall-angular\BuyEmAll.Core\obj\Debug\net5.0\ref\BuyEmAll.Core.dll
+C:\Users\theop\OneDrive\Documents\ICT\Projects\Personal\CSharp\netcore-buyemall-angular\BuyEmAll.Core\obj\Debug\net5.0\BuyEmAll.Core.pdb
+C:\Users\theop\OneDrive\Documents\ICT\Projects\Personal\CSharp\netcore-buyemall-angular\BuyEmAll.Core\obj\Debug\net5.0\BuyEmAll.Core.csprojAssemblyReference.cache
