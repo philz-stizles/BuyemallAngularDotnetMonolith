@@ -34,16 +34,18 @@ namespace BuyEmAll.API
 
             services.AddSwaggerService();
 
-            //services.AddCors(options => {
-            //    options.AddPolicy("BasePolicy", policy =>
-            //    {
-            //        var f = Configuration["AppSettings:AllowedOrigins"];
-            //        policy
-            //            .WithOrigins(Configuration["AppSettings:AllowedOrigins"])
-            //            .AllowAnyHeader()
-            //            .AllowAnyMethod();
-            //    });
-            //});
+            services.AddCors(options =>
+            {
+                options.AddPolicy("BasePolicy", policy =>
+                {
+                    var allowedOrigins = Configuration.GetSection("AppSettings:AllowedOrigins").Get<string[]>();
+                    policy
+                        .WithOrigins(allowedOrigins)
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowCredentials();
+                });
+            });
 
             services.AddApiValidationService();
         }

@@ -36,8 +36,10 @@ namespace BuyEmAll.API.Controllers
         public async Task<IActionResult> Register(RegisterDto dto)
         {
             var newUser = _mapper.Map<AppUser>(dto);
+            newUser.UserName = dto.DisplayName.Replace(" ", ""); // UserName must not have any spaces, this IdentityUser behaviour 
+            // can be hidden in the child AppUser
             var result = await _userMgr.CreateAsync(newUser);
-            if (!result.Succeeded) return BadRequest(new ApiResponse(404));
+            if (!result.Succeeded) return BadRequest(new ApiResponse(400));
 
             return Ok(new
             {

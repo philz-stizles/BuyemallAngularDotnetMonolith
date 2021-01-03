@@ -14,7 +14,7 @@ namespace BuyEmAll.API.Extensions
         public static IServiceCollection AddIdentityService(this IServiceCollection services, IConfiguration Configuration)
         {
             var builder = services.AddIdentityCore<AppUser>();
-
+ 
             builder = new IdentityBuilder(builder.UserType, builder.Services);
             builder.AddEntityFrameworkStores<AppIdentityDbContext>();
             builder.AddSignInManager<SignInManager<AppUser>>();  // The SigninManager relies on the 
@@ -28,7 +28,8 @@ namespace BuyEmAll.API.Extensions
                         ValidateIssuerSigningKey = true,
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["AppSettings:Token:JWTKey"])),
                         ValidIssuer = Configuration["AppSettings:Token:JWTIssuer"],
-                        ValidateIssuer = true
+                        ValidateIssuer = true,
+                        ValidateAudience = false
                     };
                 });
 
