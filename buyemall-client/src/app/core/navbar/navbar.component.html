@@ -2,17 +2,17 @@
     <!-- <h5 class="my-0 mr-md-auto font-weight-normal">BuyEm'All</h5> -->
     <h5 class="my-0 font-weight-normal">BuyEm'All</h5>
     <nav class="my-2 my-md-0 mr-md-3" style="font-size: medium;">
-        <a class="p-2 text-dark" href="#">Home</a>
-        <a class="p-2 text-dark" href="#">Shop</a>
-        <a class="p-2 text-dark" href="#">Contact</a>
-        <a class="p-2 text-dark" href="#">Pricing</a>
+        <a [routerLink]="['/']" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}" class="p-2" href="#">Home</a>
+        <a routerLink="/shop" routerLinkActive="active" class="p-2" href="#">Shop</a>
+        <a [routerLink]="['/contact']" routerLinkActive="active" class="p-2" href="#">Contact</a>
     </nav>
     <div class="d-flex align=align-items-center">
         <a class="position-relative" href="#">
             <i class="fa fa-shopping-cart fa-2x mr-5"></i>
             <div class="cart-no">5</div>
         </a>
-        <a class="btn btn-outline-primary mr-2" href="#">Login</a>
-        <a class="btn btn-outline-primary mr-3" href="#">Sign up</a>
+        <a class="btn btn-outline-primary mr-2" routerLink="/account/login">Login</a>
+        <a class="btn btn-outline-primary mr-3" routerLink="/account/register">Sign up</a>
     </div>
 </div>

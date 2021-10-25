@@ -2072,17 +2072,21 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\theop\\.nuget\\packages\\": {}
+    "C:\\Users\\theop\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\theop\\OneDrive\\Documents\\ICT\\Projects\\Personal\\CSharp\\netcore-buyemall-angular\\BuyEmAll.Infrastructure\\BuyEmAll.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\theop\\OneDrive\\Documents\\ICT\\ii. Projects\\C#\\Buyemall\\buyemall-angular-netcore\\BuyEmAll.Infrastructure\\BuyEmAll.Infrastructure.csproj",
       "projectName": "BuyEmAll.Infrastructure",
-      "projectPath": "C:\\Users\\theop\\OneDrive\\Documents\\ICT\\Projects\\Personal\\CSharp\\netcore-buyemall-angular\\BuyEmAll.Infrastructure\\BuyEmAll.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\theop\\OneDrive\\Documents\\ICT\\ii. Projects\\C#\\Buyemall\\buyemall-angular-netcore\\BuyEmAll.Infrastructure\\BuyEmAll.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\theop\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\theop\\OneDrive\\Documents\\ICT\\Projects\\Personal\\CSharp\\netcore-buyemall-angular\\BuyEmAll.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\theop\\OneDrive\\Documents\\ICT\\ii. Projects\\C#\\Buyemall\\buyemall-angular-netcore\\BuyEmAll.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "C:\\Users\\theop\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -2098,8 +2102,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\theop\\OneDrive\\Documents\\ICT\\Projects\\Personal\\CSharp\\netcore-buyemall-angular\\BuyEmAll.Core\\BuyEmAll.Core.csproj": {
-              "projectPath": "C:\\Users\\theop\\OneDrive\\Documents\\ICT\\Projects\\Personal\\CSharp\\netcore-buyemall-angular\\BuyEmAll.Core\\BuyEmAll.Core.csproj"
+            "C:\\Users\\theop\\OneDrive\\Documents\\ICT\\ii. Projects\\C#\\Buyemall\\buyemall-angular-netcore\\BuyEmAll.Core\\BuyEmAll.Core.csproj": {
+              "projectPath": "C:\\Users\\theop\\OneDrive\\Documents\\ICT\\ii. Projects\\C#\\Buyemall\\buyemall-angular-netcore\\BuyEmAll.Core\\BuyEmAll.Core.csproj"
             }
           }
         }
@@ -2150,7 +2154,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

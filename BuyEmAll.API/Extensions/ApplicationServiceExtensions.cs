@@ -15,12 +15,15 @@ namespace BuyEmAll.API.Extensions
         {
             // Repositories
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<IBasketRepository, BasketRepository>();
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>)); // This is specified with typeof because 
             // its generic value could be anything
 
             // Services
+            services.AddSingleton<IResponseCacheService, ResponseCacheService>();
             services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<IPaymentService, PaymentService>();
 
 
             // Configurations

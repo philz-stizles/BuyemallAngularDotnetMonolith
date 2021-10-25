@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HTuUWkI8/8sKVqILWccPDLZGm9T0BIZXIRLhs/dCrf5IfWc6PicM0abJaeUoOQDau1w4fQAQunq0YhH4OaOqDw==",
+  "dgSpecHash": "J3dMdui0rcyEjJpdTtKRIwcBjexqE1uRAOszYl2GmoVyEiDH4qpShHvrZgP47+JlUUPJQo/5x0eiXWjum5NW3Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\theop\\OneDrive\\Documents\\ICT\\Projects\\Personal\\CSharp\\netcore-buyemall-angular\\BuyEmAll.API\\BuyEmAll.API.csproj",
+  "projectFilePath": "C:\\Users\\theop\\OneDrive\\Documents\\ICT\\ii. Projects\\C#\\Buyemall\\buyemall-angular-netcore\\BuyEmAll.API\\BuyEmAll.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\theop\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\theop\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",

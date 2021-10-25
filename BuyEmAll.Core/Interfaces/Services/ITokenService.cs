@@ -1,4 +1,4 @@
-﻿using BuyEmAll.Core.Entities;
+﻿using BuyEmAll.Core.Entities.Identity;
 
 namespace BuyEmAll.Core.Interfaces.Services
 {

@@ -1,16 +1,44 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { IPagination } from '../shared/models/pagination';
+import { environment } from 'src/environments/environment';
+import { IBrand } from '../shared/models/brand';
+import { ICategory } from '../shared/models/category';
+import { IProduct, IProductPagination } from '../shared/models/product';
+import { IProductSpecParams } from '../shared/models/productSpecParams';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ShopService {
-  baseUrl = 'https://localhost:44374/api'
+  baseUrl = environment.baseUrl
 
   constructor(private http: HttpClient) { }
 
-  getProducts() {
-    return this.http.get<IPagination>(`${this.baseUrl}/Products/GetProducts`)
+  getProducts(spec: IProductSpecParams) {
+    let params = new HttpParams()
+    Object.keys(spec).forEach(prop => {
+      console.log(prop, spec[prop])
+      params = params.append(prop, spec[prop])
+    })
+
+    console.log(params)
+
+    return this.http.get<IProductPagination>(`${this.baseUrl}/Products/GetProducts`, { params })
+  }
+
+  getProduct(id: number) {
+    return this.http.get<IProduct>(`${this.baseUrl}/Products/${id}`)
+  }
+
+  getProductBrands() {
+    return this.http.get<IBrand[]>(`${this.baseUrl}/Products/GetBrands`)
+  }
+
+  getProductCategories() {
+    return this.http.get<ICategory[]>(`${this.baseUrl}/Products/GetCategories`)
+  }
+
+  addToCart() {
+    return this.http.get<ICategory[]>(`${this.baseUrl}/basket/Create`)
   }
 }

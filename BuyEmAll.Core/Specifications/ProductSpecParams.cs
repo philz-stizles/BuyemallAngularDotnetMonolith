@@ -15,5 +15,13 @@
         public int? CategoryId { get; set; }
         public int? BrandId { get; set; }
         public string Sort { get; set; }
+        public string Search { get; set; }
+
+        //public string _search { get; set; }
+        //public string Search
+        //{
+        //    get => _search;
+        //    set => _search.ToLower();
+        //}
     }
 }

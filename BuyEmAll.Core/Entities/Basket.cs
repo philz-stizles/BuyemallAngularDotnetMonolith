@@ -14,6 +14,6 @@ namespace BuyEmAll.Core.Entities
         }
 
         public new string Id { get; set; } // This will be generated from the client-side
-        public List<BasketItem> BasketItems { get; set; } = new List<BasketItem>();
+        public List<BasketItem> CartItems { get; set; } = new List<BasketItem>();
     }
 }

@@ -1,4 +1,4 @@
-namespace BuyEmAll.Core.Entities
+namespace BuyEmAll.Core.Entities.Identity
 {
     public class Address: BaseEntity
     {

@@ -10,6 +10,6 @@ export interface IProduct {
     brand: string
 }
 
-interface IProductPagination extends IPagination {
+export interface IProductPagination extends IPagination {
     data: IProduct[]
 }

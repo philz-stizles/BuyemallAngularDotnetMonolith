@@ -5,8 +5,12 @@ namespace BuyEmAll.Core.Specifications
     public class ProductsWithCategoryAndBrandSpec : BaseSpecification<Product>
     {
         public ProductsWithCategoryAndBrandSpec(ProductSpecParams productSpecParams) 
-            : base(p => (!productSpecParams.CategoryId.HasValue || p.CategoryId == productSpecParams.CategoryId)
-                && (!productSpecParams.BrandId.HasValue || p.BrandId == productSpecParams.BrandId))
+            : base(p => (productSpecParams.CategoryId == 0 || !productSpecParams.CategoryId.HasValue || p.CategoryId == productSpecParams.CategoryId)
+                && (productSpecParams.BrandId == 0 || !productSpecParams.BrandId.HasValue || p.BrandId == productSpecParams.BrandId)
+                && (string.IsNullOrEmpty(productSpecParams.Search) 
+                    || p.Name.ToLower().Contains(productSpecParams.Search.ToLower()) 
+                    || p.Description.ToLower().Contains(productSpecParams.Search.ToLower()))
+            )
         {
             AddInclude(e => e.Category);
             AddInclude(e => e.Brand);

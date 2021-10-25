@@ -7,7 +7,6 @@ using BuyEmAll.API.Helpers;
 using BuyEmAll.Core.Entities;
 using BuyEmAll.Core.Interfaces;
 using BuyEmAll.Core.Specifications;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;

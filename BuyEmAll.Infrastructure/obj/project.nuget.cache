@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BzVsCR2/u7gdTRDmygppjaOMhhHBiF/twUaKnMLaw5jHDshkg6mu8ErAyD6gTpvakTy8/5sPbSGt2qzlRdOMgQ==",
+  "dgSpecHash": "Jugab61AZunjP3JXi12BS4t1870Hyt4ule06vu6vwFRkOOS/Sttv01hfMgyb42iO3LhCWdMtIsI5aVFNbFnLYQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\theop\\OneDrive\\Documents\\ICT\\Projects\\Personal\\CSharp\\netcore-buyemall-angular\\BuyEmAll.Infrastructure\\BuyEmAll.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\theop\\OneDrive\\Documents\\ICT\\ii. Projects\\C#\\Buyemall\\buyemall-angular-netcore\\BuyEmAll.Infrastructure\\BuyEmAll.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\theop\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.1\\microsoft.aspnetcore.cryptography.internal.5.0.1.nupkg.sha512",
     "C:\\Users\\theop\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.1\\microsoft.aspnetcore.cryptography.keyderivation.5.0.1.nupkg.sha512",
