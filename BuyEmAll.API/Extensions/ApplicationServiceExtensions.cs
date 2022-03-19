@@ -1,7 +1,8 @@
 using BuyEmAll.Core.Configs;
-using BuyEmAll.Core.Interfaces;
+using BuyEmAll.Core.Interfaces.Repositories;
 using BuyEmAll.Core.Interfaces.Services;
 using BuyEmAll.Infrastructure.Data;
+using BuyEmAll.Infrastructure.Data.Repositories;
 using BuyEmAll.Infrastructure.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,6 +15,7 @@ namespace BuyEmAll.API.Extensions
         public static IServiceCollection AddApplicationService(this IServiceCollection services, IConfiguration Configuration)
         {
             // Repositories
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<IBasketRepository, BasketRepository>();
@@ -24,6 +26,8 @@ namespace BuyEmAll.API.Extensions
             services.AddSingleton<IResponseCacheService, ResponseCacheService>();
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<IPaymentService, PaymentService>();
+            services.AddScoped<IOrderService, OrderService>();
+            services.AddScoped<IDeliveryMethodService, DeliveryMethodService>();
 
 
             // Configurations

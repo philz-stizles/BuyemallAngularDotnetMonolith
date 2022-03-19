@@ -1,5 +1,5 @@
 ﻿using BuyEmAll.Core.Entities;
-using BuyEmAll.Core.Interfaces;
+using BuyEmAll.Core.Interfaces.Repositories;
 using StackExchange.Redis;
 using System;
 using System.Text.Json;

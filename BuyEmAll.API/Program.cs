@@ -1,4 +1,4 @@
-using BuyEmAll.Core.Entities;
+using BuyEmAll.Core.Entities.Identity;
 using BuyEmAll.Infrastructure.Data;
 using BuyEmAll.Infrastructure.Identity;
 using Microsoft.AspNetCore.Hosting;

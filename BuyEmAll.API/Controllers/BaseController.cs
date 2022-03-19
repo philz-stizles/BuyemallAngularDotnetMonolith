@@ -1,10 +1,5 @@
-﻿using System.Threading.Tasks;
-using AutoMapper;
-using BuyEmAll.API.Dtos.Account;
-using BuyEmAll.Core.Entities;
-using Microsoft.AspNetCore.Identity;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
 namespace BuyEmAll.API.Controllers
 {

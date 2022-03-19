@@ -1,7 +1,7 @@
 ﻿using BuyEmAll.Core.Entities;
 using System.Threading.Tasks;
 
-namespace BuyEmAll.Core.Interfaces
+namespace BuyEmAll.Core.Interfaces.Repositories
 {
     public interface IBasketRepository
     {

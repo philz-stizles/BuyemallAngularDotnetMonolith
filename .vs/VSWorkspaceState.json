@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BuyEmAll.API"
+    "\\BuyEmAll.Core",
+    "\\BuyEmAll.Core\\Entities",
+    "\\BuyEmAll.Core\\Entities\\Identity",
+    "\\BuyEmAll.Core\\Entities\\OrderAggregate"
   ],
   "SelectedNode": "\\BuyEmAll.sln",
   "PreviewInSolutionExplorer": false

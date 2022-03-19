@@ -1,5 +1,5 @@
 ﻿using BuyEmAll.Core.Entities;
-using BuyEmAll.Core.Interfaces;
+using BuyEmAll.Core.Interfaces.Repositories;
 using BuyEmAll.Core.Specifications;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
@@ -15,6 +15,16 @@ namespace BuyEmAll.Infrastructure.Data
         public GenericRepository(StoreContext context)
         {
             _context = context;
+        }
+
+        public void Add(T entity)
+        {
+            _context.Set<T>().Add(entity);
+        }
+
+        public void Delete(T entity)
+        {
+            _context.Set<T>().Remove(entity);
         }
 
         public async Task<IReadOnlyList<T>> GetAllAsync()
@@ -37,6 +47,12 @@ namespace BuyEmAll.Infrastructure.Data
         {
             var query = ApplySpecification(spec);
             return await query.ToListAsync();
+        }
+
+        public void Update(T entity)
+        {
+            _context.Set<T>().Attach(entity);
+            _context.Entry(entity).State = EntityState.Modified;
         }
 
         private IQueryable<T> ApplySpecification(ISpecification<T> spec)

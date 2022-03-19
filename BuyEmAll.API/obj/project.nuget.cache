@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "J3dMdui0rcyEjJpdTtKRIwcBjexqE1uRAOszYl2GmoVyEiDH4qpShHvrZgP47+JlUUPJQo/5x0eiXWjum5NW3Q==",
+  "dgSpecHash": "BQcx/6uGTvsldbt2lpmdcWl7mkrQsyFy6Q9IuB/ffKbvPJnBYFgQpZRBNCmLUjTC64NJEV6NkEXFyiIqAG1Xag==",
   "success": true,
   "projectFilePath": "C:\\Users\\theop\\OneDrive\\Documents\\ICT\\ii. Projects\\C#\\Buyemall\\buyemall-angular-netcore\\BuyEmAll.API\\BuyEmAll.API.csproj",
   "expectedPackageFiles": [
@@ -44,12 +44,14 @@
     "C:\\Users\\theop\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\theop\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\theop\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\theop\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\theop\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.0\\pipelines.sockets.unofficial.2.2.0.nupkg.sha512",
     "C:\\Users\\theop\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.4\\sqlitepclraw.bundle_e_sqlite3.2.0.4.nupkg.sha512",
     "C:\\Users\\theop\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
     "C:\\Users\\theop\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.4\\sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
     "C:\\Users\\theop\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.4\\sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512",
     "C:\\Users\\theop\\.nuget\\packages\\stackexchange.redis\\2.2.4\\stackexchange.redis.2.2.4.nupkg.sha512",
+    "C:\\Users\\theop\\.nuget\\packages\\stripe.net\\39.74.0\\stripe.net.39.74.0.nupkg.sha512",
     "C:\\Users\\theop\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\theop\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\theop\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",

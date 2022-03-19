@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using BuyEmAll.Core.Entities;
-using BuyEmAll.Core.Interfaces;
+using BuyEmAll.Core.Interfaces.Repositories;
 using BuyEmAll.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 

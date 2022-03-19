@@ -1,5 +1,6 @@
 ﻿
 using BuyEmAll.Core.Entities;
+using BuyEmAll.Core.Entities.OrderAggregate;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -49,6 +50,16 @@ namespace BuyEmAll.Infrastructure.Data
                         await context.Products.AddRangeAsync(productList);
                         // await context.SaveChangesAsync();
                     }
+                    await context.SaveChangesAsync();
+                }
+
+                if (!context.DeliveryMethods.Any())
+                {
+                    var deliveryMethodsSeedLocation = "../BuyEmAll.Infrastructure/Data/SeedData/delivery.json";  // Path should be the location
+                    var serializedProducts = System.IO.File.ReadAllText(deliveryMethodsSeedLocation);
+                    var deliveryMethods = JsonSerializer.Deserialize<IReadOnlyList<DeliveryMethod>>(serializedProducts);
+
+                    await context.DeliveryMethods.AddRangeAsync(deliveryMethods);
                     await context.SaveChangesAsync();
                 }
             }

@@ -2,7 +2,7 @@
 using AutoMapper;
 using BuyEmAll.API.Errors;
 using BuyEmAll.Core.Entities;
-using BuyEmAll.Core.Interfaces;
+using BuyEmAll.Core.Interfaces.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;

@@ -2,7 +2,8 @@
   "runtimeOptions": {
     "additionalProbingPaths": [
       "C:\\Users\\theop\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\theop\\.nuget\\packages"
+      "C:\\Users\\theop\\.nuget\\packages",
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ]
   }
 }

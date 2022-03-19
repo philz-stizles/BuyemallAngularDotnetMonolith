@@ -1,4 +1,4 @@
-﻿using BuyEmAll.Core.Entities;
+﻿using BuyEmAll.Core.Entities.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using System;
@@ -21,7 +21,7 @@ namespace BuyEmAll.Infrastructure.Identity
                         DisplayName = "Administrator",
                         Email = "admin@mail.com",
                         UserName = "AdminUser",
-                        Addresss = new List<Address>
+                        Addresses = new List<Address>
                         { 
                             new Address{
                                 Street = "Buyemall",

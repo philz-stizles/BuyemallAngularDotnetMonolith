@@ -5,7 +5,7 @@ using BuyEmAll.API.Dtos;
 using BuyEmAll.API.Errors;
 using BuyEmAll.API.Helpers;
 using BuyEmAll.Core.Entities;
-using BuyEmAll.Core.Interfaces;
+using BuyEmAll.Core.Interfaces.Repositories;
 using BuyEmAll.Core.Specifications;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -32,6 +32,7 @@ namespace BuyEmAll.API.Controllers
             _logger = logger;
         }
 
+        [Cached(600)]
         [HttpGet("[action]")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IReadOnlyList<ProductReadDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ApiResponse))]
@@ -45,7 +46,7 @@ namespace BuyEmAll.API.Controllers
                 Data = _mapper.Map<IReadOnlyList<ProductReadDto>>(result) });
         }
 
-
+        [Cached(600)]
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ProductReadDto))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ApiResponse))]
@@ -54,13 +55,14 @@ namespace BuyEmAll.API.Controllers
             return Ok(_mapper.Map<ProductReadDto>(await _productRepo.GetEntityWithSpecAsync(new ProductsWithCategoryAndBrandSpec(id))));
         }
 
-
+        [Cached(600)]
         [HttpGet("[action]")]
         public async Task<IActionResult> GetCategories()
         {
             return Ok(await _categoryRepo.GetAllAsync());
         }
 
+        [Cached(600)]
         [HttpGet("[action]")]
         public async Task<IActionResult> GetBrands()
         {

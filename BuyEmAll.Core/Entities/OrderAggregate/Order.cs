@@ -5,6 +5,11 @@ namespace BuyEmAll.Core.Entities.OrderAggregate
 {
     public class Order: BaseEntity
     {
+        public Order()
+        {
+
+        }
+
         public Order(IReadOnlyList<OrderItem> orderItems, string email, Address shipToAddress, DeliveryMethod deliveryMethod, 
             decimal subtotal, string paymentIntentId
         )

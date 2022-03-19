@@ -1,8 +1,4 @@
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using BuyEmAll.Core.Entities;
-
-namespace BuyEmAll.Core.Interfaces
+namespace BuyEmAll.Core.Interfaces.Repositories
 {
     public interface IOrderRepository
     {

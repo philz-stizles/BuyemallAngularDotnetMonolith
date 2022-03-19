@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using BuyEmAll.API.Dtos.Account;
 using BuyEmAll.API.Errors;
-using BuyEmAll.Core.Entities;
+using BuyEmAll.Core.Entities.Identity;
 using BuyEmAll.Core.Interfaces.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
